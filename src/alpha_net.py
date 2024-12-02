@@ -48,7 +48,7 @@ class ResBlock(nn.Module):
         self.conv2 = nn.Conv2d(planes, planes, kernel_size=3, stride=stride,
                      padding=1, bias=False)
         self.bn2 = nn.BatchNorm2d(planes)
-        self.dropout = nn.Dropout(p=0.03)  # Dropout with 30% probability
+        self.dropout = nn.Dropout(p=0.03)  # Dropout with 0.3% probability
 
     def forward(self, x):
         residual = x
@@ -68,7 +68,7 @@ class OutBlock(nn.Module):
         self.bn = nn.BatchNorm2d(1)
         self.fc1 = nn.Linear(8*8, 64)
         self.fc2 = nn.Linear(64, 1)
-        self.dropout = nn.Dropout(p=0.03)  # Dropout with 30% probability
+        self.dropout = nn.Dropout(p=0.03)  # Dropout with 0.3% probability
         
         self.conv1 = nn.Conv2d(256, 128, kernel_size=1) # policy head
         self.bn1 = nn.BatchNorm2d(128)

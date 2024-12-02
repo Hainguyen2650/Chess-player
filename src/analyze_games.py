@@ -27,7 +27,7 @@ for i in range(len(dataset)):
     board = ed.decode_board(dataset[i][0])
     fig = vb(board.current_board)
     plt.savefig(os.path.join(r"C:\Users\nguye\OneDrive\Desktop\Newfolder(2)", \
-                             f"{file}_{i}.png"))
+                             f"{file}_{i}.png")) #Change directory here to save matches
     
 fig = vb(b.current_board)
 plt.savefig(os.path.join(r"C:\Users\nguye\OneDrive\Desktop\Newfolder(2)", \

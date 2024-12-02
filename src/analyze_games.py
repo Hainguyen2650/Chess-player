@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Feb  7 09:55:20 2019
-
-@author: WT
-"""
-
 import os
 import numpy as np
 import pickle

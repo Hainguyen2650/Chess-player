@@ -1,4 +1,3 @@
-Intro to AI Capstone project by Group 01
 The capstone project of Group 01 for Introduction to Artificial Intelligence course on Chess with AI.
 
 This is our chess program where the player will play against an intelligent agent designed to play chess.
